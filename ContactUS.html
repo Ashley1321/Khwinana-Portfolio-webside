@@ -5,15 +5,58 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="contactbody">
-    <h2>Contact US</h2>
-Name<br><input type="text" name="uname" ><br><br>
-Surname<br><input type="text" name="surname"><br><br>
-Email<br><input type="text" name="email"><br><br>
-Province<br><input type="text" name="province"><br><br>
-Town<br><input type="text" name="town"><br><br>
-Message<br>
-<textarea class="textarea">Leave a Comment here</textarea><br><br><br><br>
-<button class="btn2">Submit</button><br>
+   
+<form 
+action="https://formspree.io/f/mlezbvaw" method="POST" name="register">    
 
+<h2 id="h2Heading"></h2>
+Name<br><input type="text" name="UName" ><br><br>
+Surname<br><input type="text" name="Surname"><br><br>
+Email<br><input type="text" name="Email"><br><br>
+Province<br><input type="text" name="Province"><br><br>
+Town<br><input type="text" name="Town"><br><br>
+Message<br>
+<textarea  placeholder="Leave a Comment here" class="textarea" id="Message"></textarea><br><br><br><br>
+<button type=”submit” id="submission" onclick="myClick()">Send</button>
+
+</form>
+<script>
+    // Display the heading
+    document.getElementById('h2Heading').innerHTML='Contact Us';
+    //create a finction 
+function myClick(){
+
+ //Declare and assign the textbox variables
+    var UName=register.UName.value;
+    var Surname=register.Surname.value;
+    var Email=register.Email.value;
+    var Province=register.Province.value;
+    var Town=register.Town.value;
+    document.getElementById('Message').value;
+  
+    //Create the alert message
+    if (UName==""){
+        alert('Please Enter the UName');
+        return false;
+    } else if(Surname==""){
+        alert('Please Enter Surname');
+        return false;
+    }else if (Email==""){
+        alert('Enter Email');
+        return false;
+    }else if (Province==""){
+        alert('Enter Province');
+        return false;
+    }else if (Town==""){
+        alert('Please Enter Town');
+        return false;
+            
+        }
+    
+    }
+    
+   
+   
+</script>
 </body>
 </html>

@@ -11,14 +11,14 @@
         <!--table that align the logo -->
 
         <td>
-            <img class="logo" src="logo.jpg" alt="This is the logo">
+            <img class="logo" id="logo">
         </td>
          <!--table that align the navigation -->
         <td align="right">
             <nav>
-            <a href="#">Home</a>
-            <a href="AboutMe.html">About Me</a>
-            <a href="ContactUS.html"> Contact US</a>
+            <a href="#" id="homepage"></a>
+            <a href="AboutMe.html" id="aboutMePage"></a>
+            <a href="ContactUS.html" id="ContactUspage"></a>
             </nav>
             
         </td>
@@ -30,7 +30,7 @@
         <!--table that align the video -->
         <td colspan="2">
             <hr/>
-            <video controls poster="svt.jpg" src="MustangGT.mp4" type="video/mp4">
+            <video controls poster="svt.jpg" id="Video"  type="video/mp4">
             </video> 
             <hr/>  
         </td>
@@ -38,23 +38,16 @@
         <tr>
         <td align="center" width="50%" colspan="1">
             <div class="bio">
-                <h1>Ashley Khwinana</h1>
-                <p>
-                I am a very hard working individual who also enjoys working with a team
-                I get along with people so well,
-                on my spare time I love playing games online,
-                playing football or just watching movies.
-                As time goes by I want to be a full stack web developer
-                I am a strategic person who is very good with analyzing.<br><br><br>
-                I believe with these qualities I will make it in the coding industry
-                I love ICT because technology is something that is advancing daily,
-                It gives Us the opportunity to challange ourselves with new things daily.
-                </p>
-                <button class="btn">Personal Bio</button>
+                <h1 id="MainHeading"></h1>
+                <p id="Bio"></p>
+                <p id="lastParagraph"></p>
+               
+                <button onclick="myClickFunction()" id="knowMeMore">More About me</button>
+                
             </div>
         </td>
         <td align="right">
-            <img id="userimage" src="ashley.jpg" alt="This is the image">
+            <img id="userimage" alt="This is the image">
         </td>
     </tr>
  
@@ -62,15 +55,45 @@
 <tr>
     <td colspan="2">
 <footer class="footer">
-    <p class="footertext">
-        For More Infomation reach out to:<br> 
-        Email: khwinanaashley3@gmail.com<br>
-        Facebook:Huncho Fibonacci<br>
-        WhatsApp:064 746 8141<br>
+    <p class="footertext" id="firstLine">
+        <p id="Email"></p>
+        <p id="Facebook"></p>
+        <p id="Whatsapp"></p>
+        <p id="Tel"></p>
     </p>  
 </td>
 </tr>  
 </footer>
+<script>
+   function myClickFunction() {
+       alert('Click on About Me Link');
+       
+   }
+// Rendering my header elements on JavaScript
+    document.getElementById('logo').src='logo.jpg';
+    document.getElementById('homepage').innerHTML='Home';
+    document.getElementById('aboutMePage').innerHTML='About Me';
+    document.getElementById('ContactUspage').innerHTML='Contact Us';
+
+//Rendering my video on JavaScript
+    document.getElementById('Video').src='MustangGT.mp4';
+
+//Displaying my Bio 
+    document.getElementById('MainHeading').innerHTML='Ashley Khwinana';
+    document.getElementById('Bio').innerHTML=' I am a very hard working individual who also enjoys working with a team   I get along with people so well on my spare time I love playing games online, playing football or just watching movies.As time goes by I want to be a full stack web developer I am a strategic person who is very good with analyzing.' ;
+    document.getElementById('lastParagraph').innerHTML=' I believe with these qualities I will make it in the coding industry I love ICT because technology is something that is advancing daily, It gives Us the opportunity to challange ourselves with new things daily.';       
+//Randering image on JavaScript
+    document.getElementById('userimage').src='ashley.jpg';
+
+//Display the footer information  
+    document.getElementById('firstLine').innerHTML='For More Infomation reach out to:';
+    document.getElementById('Email').innerHTML='Email: khwinanaashley3@gmail.com';
+    document.getElementById('Facebook').innerHTML='Facebook: Huncho Fibonacci';
+    document.getElementById('Whatsapp').innerHTML='Whatsapp: 064 746 8141';
+    document.getElementById('Tel').innerHTML='Tel: 068 504 2824';
+
+</script>
 </table>
+
 </body>
 </html>
