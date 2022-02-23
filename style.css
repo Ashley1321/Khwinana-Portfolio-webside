@@ -42,7 +42,9 @@ video{
 }
 .footer{
     background-color: red;
-    height: 125px;
+    height: 200px;
+    text-align: center;
+    font-family:Verdana;
 }
 .body{
     background-color: black;
