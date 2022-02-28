@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Final Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="Background">
+    <table id="LayoutTable" border="0">
+       
+          <tr>
+            <td colspan="3">
+              <img alt="This is the logo" id="logo">
+              
+            </td>
+
+            <td class="Link">
+              <a href="index.html" id="Home"></a>
+              <a href="#" id="Explore"></a>
+              <a href="Terms.html" id="Terms"></a> 
+              <a href="AboutUS.html" id="About"></a>
+              </td>
+              </tr>
+              <tr>
+                <td>
+                  <img id="Blouse" alt="Blouse">
+                  <h3>Blouse<br>R300</h3>
+
+                </td>
+                <td>
+                  <img id="BlackDress" alt="Black Dress" >
+                  <h3>Black Dress<br>R400</h3>
+
+                </td>
+                <td>
+                  <img id="Hoodie"alt="Hoodie">
+                  <h3>Hoodie <br>R250</h3>
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                  <img id="Set"alt="Set">
+                  <h3>Set <br>R1000</h3>
+                </td>
+                <td>
+                  <img id="Dress"alt="Shinny Dress">
+                  <h3>Dress <br>R500</h3>
+                </td>
+               
+                <td>
+                  <img id="FlowerSet"alt="Flowerset" src="./images/flower set.jpg">
+                  <h3>FlowerSet<br>R1000</h3>
+                </td>
+              </tr>
+            </table>
+
+<script>
+    
+      // Display the logo via Javascript
+      document.getElementById('logo').src='./images/logo.svg';
+    //Display the links
+    document.getElementById('Home').innerHTML='Home';
+    document.getElementById('Explore').innerHTML='Shop';
+    document.getElementById('Terms').innerHTML='Terms & Conditions';
+    document.getElementById('About').innerHTML='About Us';
+   
+     //insert pictures on the leftside
+     document.getElementById('Blouse').src='./images/Blouse.jpg'; 
+     document.getElementById('BlackDress').src='./images/black dress.jpg'; 
+     document.getElementById('Hoodie').src='./images/hoodie.jpg'; 
+     document.getElementById('Set').src='./images/set.jpg'; 
+     document.getElementById('Dress').src='./images/dress.jpg'; 
+     document.getElementById('FlowerSet').src='./images/flower set.jpg'; 
+</script>
+</body>
+</html>

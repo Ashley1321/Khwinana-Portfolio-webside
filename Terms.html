@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Terms & Conditions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="Background">
+      <table border="0">
+      <tr>
+          <td colspan="2">
+            <img alt="This is the logo" id="logo">
+          </td>
+          <!-- These are the links -->
+          <td class="Link">
+            <a href="index.html" id="Home"></a>
+            <a href="Shop.html" id="Explore"></a>
+            <a href="#" id="Terms"></a> 
+            <a href="AboutUS.html" id="About"></a>
+          </td>
+      </tr>
+      <tr>
+        <td id="LeftSide" align="left" colspan="2">
+      <h1 align="center" id="Heading">
+       <!-- This is the list   -->
+      </h1>
+      <ol id="Lists">
+          <li>
+              Base apparel agrees to sell particular goods on layby to you, to accept payment<br>
+              from you for the layby goods by way of an initial deposit & monthly installment<br>
+              and hold the layby goods until purchase price has been paid.
+          </li>
+          <li>
+              A minimum of deposit of 15% of the purchase price of the layby goods is required when<br>
+              entering into the layby agreement. 
+          </li>
+          <li>
+              The purchaser must then make a minimum of one payment per month until the price has fully been paid.
+          </li>
+          <li>
+              All layby goods purchased in terms of a single layby agreement must fully be paid for and collected<br>
+              on the final payment date.
+          </li>
+          <li>
+              No interest will apply. As such buyer shall have no further recourse against Base Apparel in regulation<br>
+              to the layby goods or under the layby agreement.
+          </li>
+      </ol>
+    </td>
+    <!-- This is the picture on the right -->
+    <td id="RightSide" align="right">
+        <img alt="This is the hero-desktop Image" id="RightPicture">
+    </td>
+    </tr>
+    </table>
+    <script>
+        // Display the logo via Javascript
+        document.getElementById('logo').src='./images/logo.svg';
+        //Display the links
+        document.getElementById('Home').innerHTML='Home';
+        document.getElementById('Explore').innerHTML='Shop';
+        document.getElementById('Terms').innerHTML='Terms & Conditions';
+        document.getElementById('About').innerHTML='About Us';
+        //Display the rightSide via JavaScript
+        document.getElementById('RightPicture').src='./images/hero-desktop.jpg';
+        //Display the heading
+        document.getElementById('Heading').innerHTML=' Layby agreement Terms and Conditions of sale and Payment';   
+    </script>
+</body>
+</html>

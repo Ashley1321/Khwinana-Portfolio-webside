@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About US</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="Background">
+  
+       <table id="LayoutTable" border="0">
+      <tr>
+        <td colspan="2">
+            <img alt="This is the logo" id="logo">
+          </td>
+          <!-- This are the links -->
+          <td class="Link">
+            <a href="index.html" id="Home"></a>
+            <a href="Shop.html" id="Explore"></a>
+            <a href="Terms.html" id="Terms"></a> 
+            <a href="#" id="About"></a>
+          </td>
+      </tr>
+      <tr>
+        <td id="LeftSide" colspan="2">
+          <!-- This is the paragraph -->
+        <h1 class="FirstHeading" align="center">About US</h1>
+          <p id="FirstLine"></p>
+          <p id="SecondLine"></p>
+          <p id="ThirdLine"></p>
+          <p id="FourthLine"></p>
+          <p id="FifthLine"></p>
+          <p id="SixthLine"></p>
+    </td>
+    <!-- Right side image -->
+    <td id="RightSide" align="right">
+        <img alt="This is the hero-desktop Image" id="RightPicture">
+    </td>
+    </tr>
+</table>
+<script>
+  // Display the logo via Javascript
+    document.getElementById('logo').src='./images/logo.svg';
+    //Display the links
+    document.getElementById('Home').innerHTML='Home';
+    document.getElementById('Explore').innerHTML='Shop';
+    document.getElementById('Terms').innerHTML='Terms & Conditions';
+    document.getElementById('About').innerHTML='About Us';
+    //Display the paragraph
+    document.getElementById('FirstLine').innerHTML='Base Apparel is an authorised clothing retailer from iconic street-inspired fashion';
+    document.getElementById('SecondLine').innerHTML="You'll find a wide variety of clothes for women.";
+    document.getElementById('ThirdLine').innerHTML='This is the type of business that makes it possible for customers all around the world';
+    document.getElementById('FourthLine').innerHTML='to express themselves through fashion and design,and to choose a more sustainable lifestyle';
+    document.getElementById('FifthLine').innerHTML=' We create value for people and society in general by delivering our customer offering and by developing';
+    document.getElementById('SixthLine').innerHTML='with a focus on sustainable and profitable growth.';
+    //Display the rightSide via JavaScript
+    document.getElementById('RightPicture').src='./images/hero-desktop.jpg';
+            
+</script>
+</body>
+</html>

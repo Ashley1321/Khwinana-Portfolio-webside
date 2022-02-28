@@ -1,99 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Portfolio website</title>
+<title>Final Project</title>
 <link rel="stylesheet" href="style.css">
-</head>    
-<body>
-<header>
-    <table id="headertable" border="0">
-    <tr>
-        <!--table that align the logo -->
-
-        <td>
-            <img class="logo" id="logo">
-        </td>
-         <!--table that align the navigation -->
-        <td align="right">
-            <nav>
-            <a href="#" id="homepage"></a>
-            <a href="AboutMe.html" id="aboutMePage"></a>
-            <a href="ContactUS.html" id="ContactUspage"></a>
-            </nav>
-            
-        </td>
-    </tr>
-    
-</header>
-<main>
-    <tr>
-        <!--table that align the video -->
-        <td colspan="2">
-            <hr/>
-            <video controls poster="svt.jpg" id="Video"  type="video/mp4">
-            </video> 
-            <hr/>  
-        </td>
-    </tr>
-        <tr>
-        <td align="center" width="50%" colspan="1">
-            <div class="bio">
-                <h1 id="MainHeading"></h1>
-                <p id="Bio"></p>
-                <p id="lastParagraph"></p>
-               
-                <button onclick="myClickFunction()" id="knowMeMore">More About me</button>
-                
-            </div>
-        </td>
-        <td align="right">
-            <img id="userimage" alt="This is the image">
-        </td>
-    </tr>
+</head>
+<body id="Background">
  
-</main> 
-<tr>
-    <td colspan="2">
-<footer class="footer">
-    <p class="footertext" id="firstLine">
-        <p id="Email"></p>
-        <p id="Facebook"></p>
-        <p id="Whatsapp"></p>
-        <p id="Tel"></p>
-    </p>  
-</td>
-</tr>  
-</footer>
-<script>
-   function myClickFunction() {
-       alert('Click on About Me Link');
-       
-   }
-// Rendering my header elements on JavaScript
-    document.getElementById('logo').src='logo.jpg';
-    document.getElementById('homepage').innerHTML='Home';
-    document.getElementById('aboutMePage').innerHTML='About Me';
-    document.getElementById('ContactUspage').innerHTML='Contact Us';
+    <table id="LayoutTable" border="0">
+       <!-- first Row -->
+          <tr>
+            <!-- Data in the first row -->
+            <td colspan="2">
+              <img alt="This is the logo" id="logo" >
+            </td>
+            <!-- Links -->
+            <td class="Link">
+              <a href="#" id="Home"></a>
+              <a href="Shop.html" id="Explore"></a>
+              <a href="Terms.html" id="Terms"></a> 
+              <a href="AboutUS.html" id="About"></a>
+            </td>
+          </tr>
+         <!-- Second row  -->
+        <tr>
+            <td class="LeftSide" align="center" colspan="2">
+              <!-- Headings -->
+              <h1 id="FirstHeading"></h1>
+              <h1 id="SecondHeading"></h1>
+              <h1 id="ThirdHeading"></h1>
 
-//Rendering my video on JavaScript
-    document.getElementById('Video').src='MustangGT.mp4';
-
-//Displaying my Bio 
-    document.getElementById('MainHeading').innerHTML='Ashley Khwinana';
-    document.getElementById('Bio').innerHTML=' I am a very hard working individual who also enjoys working with a team   I get along with people so well on my spare time I love playing games online, playing football or just watching movies.As time goes by I want to be a full stack web developer I am a strategic person who is very good with analyzing.' ;
-    document.getElementById('lastParagraph').innerHTML=' I believe with these qualities I will make it in the coding industry I love ICT because technology is something that is advancing daily, It gives Us the opportunity to challange ourselves with new things daily.';       
-//Randering image on JavaScript
-    document.getElementById('userimage').src='ashley.jpg';
-
-//Display the footer information  
-    document.getElementById('firstLine').innerHTML='For More Infomation reach out to:';
-    document.getElementById('Email').innerHTML='Email: khwinanaashley3@gmail.com';
-    document.getElementById('Facebook').innerHTML='Facebook: Huncho Fibonacci';
-    document.getElementById('Whatsapp').innerHTML='Whatsapp: 064 746 8141';
-    document.getElementById('Tel').innerHTML='Tel: 068 504 2824';
-
-</script>
-</table>
-
+              <!-- paragraph -->
+              <p id="FirstLine"></p>
+              <p id="SecondLine"></p>
+              <p id="ThirdLine"></p>
+              
+              <!-- Email textbox and button -->
+              <form action="https://formspree.io/f/mlezngwj" method="POST" name="SubmitEmail"> 
+              <input type="email" name="Email" img src="./images/icon-error.svg" id="Email" placeholder="Please Enter Your Email"  alt="this is the error icon">
+              <button type="submit" class="Button" onclick="MyClick()" ><img src="./images/icon-arrow.svg" alt="This is the Arrow button">
+                
+              </button> 
+              </form> 
+           
+            </td>
+            <!-- Right side image -->
+            <td id="RightSide" align="right">
+            <img id="RightPicture" alt="This is the hero-desktop Image">
+            </td>
+          </tr>
+        
+    </table>
+    <script>
+      // Display the logo via Javascript
+     document.getElementById('logo').src='./images/logo.svg';
+    //Display the links
+    document.getElementById('Home').innerHTML='Home';
+    document.getElementById('Explore').innerHTML='Shop';
+    document.getElementById('Terms').innerHTML='Terms & Conditions';
+    document.getElementById('About').innerHTML='About Us';
+    //Display The Headings
+    document.getElementById('FirstHeading').innerHTML="W E ' R E";
+    document.getElementById('SecondHeading').innerHTML='C O M I N G';
+    document.getElementById('ThirdHeading').innerHTML='S O O N';
+    document.getElementById('FirstLine').innerHTML="Hello Fellow Shoppers! We're currently building our new";
+    document.getElementById('SecondLine').innerHTML='fashion Store.Add your email below to stay up-to-date with';
+    document.getElementById('ThirdLine').innerHTML=' announcements and our launch deals.';
+    //Display the rightSide via JavaScript
+    document.getElementById('RightPicture').src='./images/hero-desktop.jpg';
+    //Create A function
+    function MyClick(){
+      //Declare and assign Value
+      var Email=register.Email.value;
+     
+      //Create error message
+      if (Email==""){
+        alert('Please Enter the UName');
+        return false;
+    }
+    }        
+    </script>
 </body>
 </html>
